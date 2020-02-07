@@ -18,7 +18,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Age Calculator',
       template: './src/index.html',
       inject: 'body'
     })
@@ -43,8 +43,3 @@ module.exports = {
     ]
   }
 };
-Tracks
-Previous
-Next
-Search lessons
-Learn to program at Epicodus
