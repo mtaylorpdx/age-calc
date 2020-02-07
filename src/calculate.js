@@ -13,4 +13,10 @@ export class Person {
     console.log(mercuryAge);
     return mercuryAge;
   }
+
+  venus(){
+    var venusAge = 0;
+    venusAge = parseFloat((this.age / 0.62).toFixed(2));
+    return venusAge;
+  }
 }
