@@ -11,5 +11,4 @@ export class Person {
     console.log (ages);
     return (ages);
   }
-
 }
