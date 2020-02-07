@@ -17,7 +17,7 @@ _This project application calculates the age of the user relative to solar years
 | Return the inputted age in Venus years | "37" | 59.68 |
 | Return the inputted age in Mars years | "37" | 19.68 |
 | Return the inputted age in Jupiter years  | "37" | 3.12 |
-| Allow user to input an estimated life expectancy value that is returned | "72" | "72" |
+| Allow user to input an estimated life expectancy value that is returned in different planet years | "74" | "308.33, 119.35, 39.36, 6.24 |
 | Calculate remaining life expectancy on each planet based on user input | Current Age - Expected Lifespans | Remaining Lifespans |
 | Return surpassed life expectancy if applicable | Expected Lifespan less than Current Age | Expectancy Surpassed |
 
