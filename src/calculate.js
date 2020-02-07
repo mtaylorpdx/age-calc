@@ -6,15 +6,15 @@ export class Person {
     this.agesExceeded = [];
   }
 
-  planetAges(age){
+  planetAges(age) {
     const planetYears = [0.24, 0.62, 1.88, 11.86];
     let ages = planetYears.map(function(ratio) {
       return parseFloat((age / ratio).toFixed(2));
     });
-    return ages;
+    this.ages = ages;
   }
 
-  mortality(deathAge){
+  mortality(deathAge) {
     if (this.age > deathAge) {
       let remaining = this.age - deathAge;
       let agesExceeded = this.planetAges(remaining);
