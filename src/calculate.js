@@ -8,13 +8,12 @@ export class Person {
     let ages = planetYears.map(function(ratio) {
       return parseFloat((age / ratio).toFixed(2));
     })
-    return (ages);
-  };
+    return ages;
+  }
 
   mortality(deathAge){
     let remaining = deathAge - this.age;
     let ages = this.planetAges(remaining);
-    console.log (ages);
-    return (ages);
-  };
+    return ages;
+  }
 }
