@@ -19,4 +19,10 @@ export class Person {
     venusAge = parseFloat((this.age / 0.62).toFixed(2));
     return venusAge;
   }
+
+  mars(){
+    var marsAge = 0;
+    marsAge = parseFloat((this.age / 1.88).toFixed(2));
+    return marsAge;
+  }
 }
