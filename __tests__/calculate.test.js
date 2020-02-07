@@ -24,6 +24,6 @@ describe ('Person', () => {
   });
 
   test('should return ages for all planets', ()=> {
-    expect(person.planetAges()).toEqual(154.17, 59.68, 19.68, 3.12);
+    expect(person.planetAges()).toEqual([154.17, 59.68, 19.68, 3.12]);
   });
 });
