@@ -5,7 +5,7 @@ describe ('Person', () => {
 
   beforeEach( ()=> {
     person = new Person();
-    
+    person.setAge(37);
   });
 
   test('should input and store current age in Person object', ()=> {
@@ -21,7 +21,10 @@ describe ('Person', () => {
   });
 
   test('should return age in Mercury years rounded to 2 decimals, where 1 year equals 0.24 Earth years', ()=> {
-    person.setAge(37);
     expect(person.mercury()).toEqual(154.17);
+  });
+
+  test('should return age in Venus years rounded to 2 decimals, where 1 year equals 0.62 Earth years', ()=> {
+    expect(person.venus()).toEqual(59.68);
   });
 });
