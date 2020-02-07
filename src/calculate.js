@@ -26,4 +26,9 @@ export class Person {
     return marsAge;
   }
 
+  jupiter(){
+    var jupiterAge = 0;
+    jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
+    return jupiterAge;
+  }
 }
