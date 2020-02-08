@@ -1,34 +1,32 @@
-export class Person {
-  constructor(age) {
-    this.age = age;
-  }
+import { Person } from './../src/calculate.js';
 
-  mercury(){
-    let mercuryAge = 0;
-    console.log(this.age);
-    mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
-    console.log(mercuryAge);
-    return mercuryAge;
-  }
+describe ('Person', () => {
+  let person;
 
-  venus(){
-    let venusAge = 0;
-    venusAge = parseFloat((this.age / 0.62).toFixed(2));
-    return venusAge;
-  }
+  beforeEach( ()=> {
+    person = new Person(37);
+  });
 
-  mars(){
-    let marsAge = 0;
-    marsAge = parseFloat((this.age / 1.88).toFixed(2));
-    return marsAge;
-  }
+  test('should return age in Mercury years rounded to 2 decimals, where 1 year equals 0.24 Earth years', ()=> {
+    expect(person.mercury()).toEqual(154.17);
+  });
 
-  jupiter(){
-    let jupiterAge = 0;
-    jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
-    return jupiterAge;
-  }
-}
+  test('should return age in Venus years rounded to 2 decimals, where 1 year equals 0.62 Earth years', ()=> {
+    expect(person.venus()).toEqual(59.68);
+  });
+
+  test('should return age in Mars years rounded to 2 decimals, where 1 year equals 1.88 Earth years', ()=> {
+    expect(person.mars()).toEqual(19.68);
+  });
+
+  test('should return age in Jupiter years rounded to 2 decimals, where 1 year equals 11.86 Earth years', ()=> {
+    expect(person.jupiter()).toEqual(3.12);
+  });
+
+  test('should return ages for all planets', ()=> {
+    expect(person.planetAges()).toEqual([154.17, 59.68, 19.68, 3.12]);
+  });
+});
 
 // import { Person } from './../src/calculate.js';
 
