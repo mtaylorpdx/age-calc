@@ -1,34 +1,21 @@
 export class Person {
   constructor(age) {
     this.age = age;
-  }
+    this.mercuryAge = 0;
+    this.venusAge = 0;
+    this.marsAge = 0;
+    this.jupiterAge = 0;
+  };
 
-  mercury(){
-    let mercuryAge = 0;
-    console.log(this.age);
-    mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
-    console.log(mercuryAge);
-    return mercuryAge;
-  }
-
-  venus(){
-    let venusAge = 0;
-    venusAge = parseFloat((this.age / 0.62).toFixed(2));
-    return venusAge;
-  }
-
-  mars(){
-    let marsAge = 0;
-    marsAge = parseFloat((this.age / 1.88).toFixed(2));
-    return marsAge;
-  }
-
-  jupiter(){
-    let jupiterAge = 0;
-    jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
-    return jupiterAge;
-  }
+  planetAge() {
+    this.mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
+    this.venusAge = parseFloat((this.age / 0.62).toFixed(2));
+    this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
+    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
+  };
 }
+
+
 // export class Person {
 //   constructor(age) {
 //     this.age = age;
