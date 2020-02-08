@@ -1,11 +1,11 @@
 import { Person } from './../src/calculate.js';
 
-describe ('Person', () => {
+describe ('Person, if age < life expectancy', () => {
   let person;
 
   beforeEach( ()=> {
     person = new Person(37);
-    person.planetAge();
+    person.planetAge(37);
     person.mortality(72);
   });
 
@@ -40,11 +40,22 @@ describe ('Person', () => {
   test('should return remaining life expectancy in Jupiter years', ()=> {
     expect(person.jupiterAgeRemaining).toEqual(2.95);
   });
+});
+
+describe ('Person, if age >= life expectancy', () => {
+  let person;
+
+  beforeEach( ()=> {
+    person = new Person(37);
+    person.planetAge(37);
+    person.mortality(35);
+  });
 
   test('should return life expectancy exceeded in Mercury years', ()=> {
     expect(person.mercuryAgeExceeded).toEqual(8.33);
   });
 });
+
 
 //   test('should calculate remaining life expectancy on each planet based on user input', ()=> {
 //     person.planetAges(37);
