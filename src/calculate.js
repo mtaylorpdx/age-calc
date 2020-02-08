@@ -22,5 +22,6 @@ export class Person {
     this.exceeded = this.age - deathAge;
     this.mercuryAgeExceeded = parseFloat((this.exceeded / 0.24).toFixed(2));
     this.venusAgeExceeded = parseFloat((this.exceeded / 0.62).toFixed(2));
+    this.marsAgeExceeded = parseFloat((this.exceeded / 1.88).toFixed(2));
   }
 }
