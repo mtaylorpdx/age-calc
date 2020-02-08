@@ -4,7 +4,7 @@
 
 #### By _Matt Taylor_
 
-[Github Pages](https://mtaylorpdx.github.io/age-calc)
+<!-- [Github Pages](https://mtaylorpdx.github.io/age-calc) -->
 
 ## Description
 
@@ -24,12 +24,14 @@ _This project application calculates the age of the user relative to solar years
 ## Setup/Installation Requirements
 
 * Open Terminal
-<!-- * Enter ``$ git clone https://github.com/mtaylorpdx/age-calc`
+* Type ``$ git clone https://github.com/mtaylorpdx/age-calc`
 * Open the project folder
-* Open index.html
-* Select pizza size
-* Select pizza toppings
-* Click 'Submit' -->
+* Type ``$ npm install``
+* Type ``$ npm run start``
+
+## Known Bugs
+
+_HTML form is currently unresponsive. Backend logic functions only._
 
 ## Support and contact details
 
@@ -37,7 +39,12 @@ Email [@Matt Taylor](mailto:me@email.com)
 
 ## Technologies Used
 
-_Written implementing Bootstrap and jQuery_
+* Javascript
+* Bootstrap
+* Webpack
+* Jest
+* Babel
+* ESLint
 
 ### License
 
