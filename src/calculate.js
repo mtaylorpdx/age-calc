@@ -10,24 +10,20 @@ export class Person {
     this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
   }
 
-  mortality(death) {
-    this.life = death - this.age;
-    console.log(this.life);
-    this.mercuryAgeRemaining = parseFloat((this.life / 0.24).toFixed(2));
-    this.venusAgeRemaining = parseFloat((this.life / 0.62).toFixed(2));
-    this.marsAgeRemaining = parseFloat((this.life / 1.88).toFixed(2));
-    this.jupiterAgeRemaining = parseFloat((this.life / 11.86).toFixed(2));
+  mortality(deathAge) {
+    this.remaining = deathAge - this.age;
+    // if (this.remaining >= this.age) {
+      console.log(this.remaining);
+      this.mercuryAgeRemaining = parseFloat((this.remaining / 0.24).toFixed(2));
+      this.venusAgeRemaining = parseFloat((this.remaining / 0.62).toFixed(2));
+      this.marsAgeRemaining = parseFloat((this.remaining / 1.88).toFixed(2));
+      this.jupiterAgeRemaining = parseFloat((this.remaining / 11.86).toFixed(2));
+    // } else {
+
+    // }
   }
 }
 
-
-// export class Person {
-//   constructor(age) {
-//     this.age = age;
-//     this.ages = [];
-//     this.agesExceeded = [];
-//     this.agesRemaining = [];
-//   }
 
 //   planetAges(age) {
 //     const planetYears = [0.24, 0.62, 1.88, 11.86];

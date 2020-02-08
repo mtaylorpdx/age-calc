@@ -40,6 +40,10 @@ describe ('Person', () => {
   test('should return remaining life expectancy in Jupiter years', ()=> {
     expect(person.jupiterAgeRemaining).toEqual(2.95);
   });
+
+  test('should return life expectancy exceeded in Mercury years', ()=> {
+    expect(person.mercuryAgeExceeded).toEqual(8.33);
+  });
 });
 
 //   test('should calculate remaining life expectancy on each planet based on user input', ()=> {
