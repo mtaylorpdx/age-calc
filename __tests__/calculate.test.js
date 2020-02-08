@@ -48,7 +48,7 @@ describe ('Person, if age >= life expectancy', () => {
   beforeEach( ()=> {
     person = new Person(37);
     person.planetAge(37);
-    person.mortality(35);
+    person.longevity(35);
   });
 
   test('should return life expectancy exceeded in Mercury years', ()=> {
