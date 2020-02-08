@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function() {
-  person = new Person();
+  let person = new Person();
+
   $("#compute").click(function(event) { 
     event.preventDefault();
 

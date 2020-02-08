@@ -2,8 +2,6 @@ export class Person {
   constructor(age) {
     this.age = age;
     this.ages = [];
-    this.agesRemaining = [];
-    this.agesExceeded = [];
   }
 
   planetAges(age) {
@@ -11,7 +9,7 @@ export class Person {
     let ages = planetYears.map(function(ratio) {
       return parseFloat((age / ratio).toFixed(2));
     });
-    this.ages = ages;
+    return ages;
   }
 
   mortality(deathAge) {
