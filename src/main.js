@@ -10,8 +10,6 @@ $(document).ready(function() {
   $("#compute").click(function(event) { 
     event.preventDefault();
 
-    console.log(person);
-
   });
 
 
