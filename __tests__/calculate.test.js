@@ -6,6 +6,7 @@ describe ('Person', () => {
   beforeEach( ()=> {
     person = new Person(37);
     person.planetAge();
+    person.mortality(72);
   });
 
   test('should return age in Mercury years rounded to 2 decimals, where 1 year equals 0.24 Earth years', ()=> {
@@ -24,21 +25,22 @@ describe ('Person', () => {
     expect(person.jupiterAge).toEqual(3.12);
   });
 
+  test('should return remaining life expectancy in Mercury years', ()=> {
+    expect(person.mercuryAgeRemaining).toEqual(145.83);
+  });
+
+  test('should return remaining life expectancy in Venus years', ()=> {
+    expect(person.venusAgeRemaining).toEqual(56.45);
+  });
+
+  test('should return remaining life expectancy in Mars years', ()=> {
+    expect(person.marsAgeRemaining).toEqual(18.62);
+  });
+
+  test('should return remaining life expectancy in Jupiter years', ()=> {
+    expect(person.jupiterAgeRemaining).toEqual(2.95);
+  });
 });
-
-// import { Person } from './../src/calculate.js';
-
-// describe ('Person', () => {
-//   let person;
-
-//   beforeEach( ()=> {
-//     person = new Person(37);
-//   });
-
-//   test('should return ages for all planets', ()=> {
-//     person.planetAges(37);
-//     expect(person.ages).toEqual([154.17, 59.68, 19.68, 3.12]);
-//   });
 
 //   test('should calculate remaining life expectancy on each planet based on user input', ()=> {
 //     person.planetAges(37);

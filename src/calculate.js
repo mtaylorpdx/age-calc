@@ -1,10 +1,6 @@
 export class Person {
   constructor(age) {
     this.age = age;
-    this.mercuryAge = 0;
-    this.venusAge = 0;
-    this.marsAge = 0;
-    this.jupiterAge = 0;
   };
 
   planetAge() {
@@ -13,6 +9,10 @@ export class Person {
     this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
     this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
   };
+
+  mortality() {
+
+  }
 }
 
 
