@@ -21,5 +21,6 @@ export class Person {
   longevity(deathAge) {
     this.exceeded = this.age - deathAge;
     this.mercuryAgeExceeded = parseFloat((this.exceeded / 0.24).toFixed(2));
+    this.venusAgeExceeded = parseFloat((this.exceeded / 0.62).toFixed(2));
   }
 }
