@@ -52,18 +52,18 @@ describe ('Person, if age >= life expectancy', () => {
   });
 
   test('should return life expectancy exceeded in Mercury years', ()=> {
-    expect(person.mercuryAgeExceeded).toEqual(8.33);
+    expect(person.agesExceeded[0]).toEqual(8.33);
   });
 
   test('should return life expectancy exceeded in Venus years', ()=> {
-    expect(person.venusAgeExceeded).toEqual(3.23);
+    expect(person.agesExceeded[1]).toEqual(3.23);
   });
 
   test('should return life expectancy exceeded in Mars years', ()=> {
-    expect(person.marsAgeExceeded).toEqual(1.06);
+    expect(person.agesExceeded[2]).toEqual(1.06);
   });
 
   test('should return life expectancy exceeded in Jupiter years', ()=> {
-    expect(person.jupiterAgeExceeded).toEqual(0.17);
+    expect(person.agesExceeded[3]).toEqual(0.17);
   });
 });

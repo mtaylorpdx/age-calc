@@ -17,12 +17,10 @@ export class Person {
   mortality(deathAge) {
     let remaining = deathAge - this.age;
     this.remaining = remaining;
-    console.log(this.remaining);
     let agesRemaining = this.planetYears.map(function(ratio) {
       return parseFloat((remaining / ratio).toFixed(2));
     });
     this.agesRemaining = agesRemaining;
-    console.log(this.agesRemaining);
   }
 
   // If life expectancy is less than current age
