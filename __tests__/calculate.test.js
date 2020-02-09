@@ -4,8 +4,8 @@ describe ('Person, if age < life expectancy', () => {
   let person;
 
   beforeEach( ()=> {
-    person = new Person(37);
-    person.planetAge();
+    person = new Person();
+    person.planetAge(37);
     person.mortality(72);
   });
 
@@ -46,7 +46,7 @@ describe ('Person, if age >= life expectancy', () => {
   let person;
 
   beforeEach( ()=> {
-    person = new Person(37);
+    person = new Person();
     person.planetAge(37);
     person.longevity(35);
   });

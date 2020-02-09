@@ -4,7 +4,8 @@ export class Person {
     this.ratios = [0.24, 0.62, 1.88, 11.86];
   }
 
-  planetAge() {
+  planetAge(age) {
+    this.age = age;
     this.mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
     this.venusAge = parseFloat((this.age / 0.62).toFixed(2));
     this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
