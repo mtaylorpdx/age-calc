@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     if (age < death) {
       person.mortality(death);
-      let remainingList = `<h5>Days remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.mercuryAgeRemaining}</p><p>Venus: ${person.venusAgeRemaining}</p><p>Mars: ${person.marsAgeRemaining}</p><p>Jupiter: ${person.jupiterAgeRemaining}</p>`;
+      let remainingList = `<h5>Days remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.agesRemaining[0]}</p><p>Venus: ${person.agesRemaining[1]}</p><p>Mars: ${person.agesRemaining[2]}</p><p>Jupiter: ${person.agesRemaining[3]}</p>`;
       $("#remaining-list").html(remainingList);
     } else {
       person.longevity(death);
