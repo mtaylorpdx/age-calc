@@ -10,19 +10,19 @@ describe ('Person, if age < life expectancy', () => {
   });
 
   test('should return age in Mercury years rounded to 2 decimals, where 1 year equals 0.24 Earth years', ()=> {
-    expect(person.mercuryAge).toEqual(154.17);
+    expect(person.planetAges[0]).toEqual(154.17);
   });
 
   test('should return age in Venus years rounded to 2 decimals, where 1 year equals 0.62 Earth years', ()=> {
-    expect(person.venusAge).toEqual(59.68);
+    expect(person.planetAges[1]).toEqual(59.68);
   });
 
   test('should return age in Mars years rounded to 2 decimals, where 1 year equals 1.88 Earth years', ()=> {
-    expect(person.marsAge).toEqual(19.68);
+    expect(person.planetAges[2]).toEqual(19.68);
   });
 
   test('should return age in Jupiter years rounded to 2 decimals, where 1 year equals 11.86 Earth years', ()=> {
-    expect(person.jupiterAge).toEqual(3.12);
+    expect(person.planetAges[3]).toEqual(3.12);
   });
 
   test('should return remaining life expectancy in Mercury years', ()=> {
