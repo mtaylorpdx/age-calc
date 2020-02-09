@@ -5,18 +5,47 @@
   </head>
   <body>
     <div class="container">
-      <h5>In Space, No One Can Hear You Age</h5>
+      <h3>In Space, No One Can Hear You Age</h3>
       <form id="form">
         <div class="form-control">
           <label for="life">Age please:</label>
-          <input type="text" id="ageInput">
+          <input type="number" id="ageInput">
         </div>
         <div class="form-control">
-          <label for="deathInput">Life Expectancy:</label>
-          <input type="text" id="lifetimeInput">
+          <label for="death">Life Expectancy:</label>
+          <input type="number" id="lifetimeInput">
         </div>
-        <button type="submit" class="btn btn-default" id="compute">Calculate</button>
+        <button type="submit" class="btn btn-secondary" id="compute" data-toggle="modal" data-target="#myModal">Calculate</button>
       </form>
+
+      <!-- Results Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Your ages across space</h4>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6">
+                  <h5>Age now:</h5>
+                  <hr>
+                  <p id="age-list">
+                </div>
+
+                <div class="col-md-6">
+                  <p id="remaining-list"></p>
+                  <p id="exceeded-list"></p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </body>
 </html>
