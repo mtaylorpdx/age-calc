@@ -4,7 +4,7 @@
 
 #### By _Matt Taylor_
 
-<!-- [Github Pages](https://mtaylorpdx.github.io/age-calc) -->
+[Github Pages](https://mtaylorpdx.github.io/age-calc)
 
 ## Description
 

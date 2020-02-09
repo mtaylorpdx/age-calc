@@ -1,14 +1,15 @@
 export class Person {
-  constructor(age) {
-    this.age = age;
+  constructor() {
+    this.planetYears = [0.24, 0.62, 1.88, 11.86];
+    this.planetAges = [];
   }
 
   planetAge(age) {
     this.age = age;
-    this.mercuryAge = parseFloat((this.age / 0.24).toFixed(2));
-    this.venusAge = parseFloat((this.age / 0.62).toFixed(2));
-    this.marsAge = parseFloat((this.age / 1.88).toFixed(2));
-    this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
+    let planetAges = this.planetYears.map(function(ratio) {
+      return parseFloat((age / ratio).toFixed(2));
+    });
+    return this.planetAges = planetAges;
   }
 
   // If life expectancy is greater than current age

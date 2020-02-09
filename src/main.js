@@ -11,11 +11,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     let age = parseInt($("#ageInput").val());
+    let death = parseInt($("#lifetimeInput").val());
+
     person.planetAge(age);
-    let ageList = `<p>Earth: ${person.age}</p><p>Mercury: ${person.mercuryAge}</p><p>Venus: ${person.venusAge}</p><p>Mars: ${person.marsAge}</p><p>Jupiter: ${person.jupiterAge}</p>`;
+    let ageList = `<p>Earth: ${person.age}</p><p>Mercury: ${person.planetAges[0]}</p><p>Venus: ${person.planetAges[1]}</p><p>Mars: ${person.planetAges[2]}</p><p>Jupiter: ${person.planetAges[3]}</p>`;
     $("#age-list").html(ageList);
 
-    let death = parseInt($("#lifetimeInput").val());
     if (age < death) {
       person.mortality(death);
       let remainingList = `<h5>Days remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.mercuryAgeRemaining}</p><p>Venus: ${person.venusAgeRemaining}</p><p>Mars: ${person.marsAgeRemaining}</p><p>Jupiter: ${person.jupiterAgeRemaining}</p>`;
