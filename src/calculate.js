@@ -3,6 +3,7 @@ export class Person {
     this.planetYears = [0.24, 0.62, 1.88, 11.86];
     this.planetAges = [];
     this.agesRemaining = [];
+    this.agesExceeded = [];
   }
 
   planetAge(age) {
@@ -25,10 +26,11 @@ export class Person {
 
   // If life expectancy is less than current age
   longevity(deathAge) {
-    this.exceeded = this.age - deathAge;
-    this.mercuryAgeExceeded = parseFloat((this.exceeded / 0.24).toFixed(2));
-    this.venusAgeExceeded = parseFloat((this.exceeded / 0.62).toFixed(2));
-    this.marsAgeExceeded = parseFloat((this.exceeded / 1.88).toFixed(2));
-    this.jupiterAgeExceeded = parseFloat((this.exceeded / 11.86).toFixed(2));
+    let exceeded = this.age - deathAge;
+    this.exceeded = exceeded;
+    let agesExceeded = this.planetYears.map(function(ratio) {
+      return parseFloat((exceeded / ratio).toFixed(2));
+    });
+    this.agesExceeded = agesExceeded;
   }
 }
