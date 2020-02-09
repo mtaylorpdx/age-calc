@@ -2,6 +2,7 @@ body {
   background-color: grey;
 }
 
-h3 {
+h3, #form {
   color: white;
 }
+

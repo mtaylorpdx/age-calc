@@ -1,7 +1,6 @@
 export class Person {
   constructor(age) {
     this.age = age;
-    this.ratios = [0.24, 0.62, 1.88, 11.86];
   }
 
   planetAge(age) {

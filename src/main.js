@@ -9,6 +9,7 @@ $(document).ready(function() {
 
   $("#form").submit(function(event) { 
     event.preventDefault();
+
     let age = parseInt($("#ageInput").val());
     person.planetAge(age);
     let ageList = `<p>Earth: ${person.age}</p><p>Mercury: ${person.mercuryAge}</p><p>Venus: ${person.venusAge}</p><p>Mars: ${person.marsAge}</p><p>Jupiter: ${person.jupiterAge}</p>`;
@@ -24,6 +25,9 @@ $(document).ready(function() {
       let exceededList = `<h5>Days overdue:</h5><hr><p>Earth: ${person.exceeded}</p><p>Mercury: ${person.mercuryAgeExceeded}</p><p>Venus: ${person.venusAgeExceeded}</p><p>Mars: ${person.marsAgeExceeded}</p><p>Jupiter: ${person.jupiterAgeExceeded}</p>`;
       $("#exceeded-list").html(exceededList);
     }
+  });
 
+  $("#close-button").click(function() {
+    document.location.reload(true);
   });
 });
