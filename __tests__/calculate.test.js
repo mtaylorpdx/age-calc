@@ -26,19 +26,19 @@ describe ('Person, if age < life expectancy', () => {
   });
 
   test('should return remaining life expectancy in Mercury years', ()=> {
-    expect(person.mercuryAgeRemaining).toEqual(145.83);
+    expect(person.agesRemaining[0]).toEqual(145.83);
   });
 
   test('should return remaining life expectancy in Venus years', ()=> {
-    expect(person.venusAgeRemaining).toEqual(56.45);
+    expect(person.agesRemaining[1]).toEqual(56.45);
   });
 
   test('should return remaining life expectancy in Mars years', ()=> {
-    expect(person.marsAgeRemaining).toEqual(18.62);
+    expect(person.agesRemaining[2]).toEqual(18.62);
   });
 
   test('should return remaining life expectancy in Jupiter years', ()=> {
-    expect(person.jupiterAgeRemaining).toEqual(2.95);
+    expect(person.agesRemaining[3]).toEqual(2.95);
   });
 });
 
