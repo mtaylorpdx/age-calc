@@ -7,10 +7,4 @@ import './styles.css';
 $(document).ready(function() {
   let person = new Person();
 
-  $("#compute").click(function(event) { 
-    event.preventDefault();
-
-  });
-
-
 });

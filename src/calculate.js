@@ -1,6 +1,7 @@
 export class Person {
   constructor(age) {
     this.age = age;
+    this.ratios = [0.24, 0.62, 1.88, 11.86];
   }
 
   planetAge() {
@@ -10,6 +11,7 @@ export class Person {
     this.jupiterAge = parseFloat((this.age / 11.86).toFixed(2));
   }
 
+  // If life expectancy is greater than current age
   mortality(deathAge) {
     this.remaining = deathAge - this.age;
     this.mercuryAgeRemaining = parseFloat((this.remaining / 0.24).toFixed(2));
@@ -18,6 +20,7 @@ export class Person {
     this.jupiterAgeRemaining = parseFloat((this.remaining / 11.86).toFixed(2));
   }
 
+  // If life expectancy is less than current age
   longevity(deathAge) {
     this.exceeded = this.age - deathAge;
     this.mercuryAgeExceeded = parseFloat((this.exceeded / 0.24).toFixed(2));
