@@ -22,7 +22,7 @@ _This project application calculates the age of the user relative to solar years
 ## Setup/Installation Requirements
 
 * Open Terminal
-* Type ``$ git clone https://github.com/mtaylorpdx/age-calc`
+* Type ``$ git clone https://github.com/mtaylorpdx/age-calc``
 * Open the project folder
 * Type ``$ npm install``
 * Type ``$ npm run start``
