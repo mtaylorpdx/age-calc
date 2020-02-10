@@ -27,10 +27,6 @@ _This project application calculates the age of the user relative to solar years
 * Type ``$ npm install``
 * Type ``$ npm run start``
 
-## Known Bugs
-
-_HTML form is currently unresponsive. Backend logic functions only._
-
 ## Support and contact details
 
 Email [@Matt Taylor](mailto:me@email.com)
