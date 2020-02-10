@@ -4,8 +4,6 @@
 
 #### By _Matt Taylor_
 
-[Github Pages](https://mtaylorpdx.github.io/age-calc)
-
 ## Description
 
 _This project application calculates the age of the user relative to solar years in different parts of the galaxy_
