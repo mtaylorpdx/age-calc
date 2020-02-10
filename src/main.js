@@ -20,11 +20,11 @@ $(document).ready(function() {
     // Check age relationship to life expectancy and output results
     if (age < death) {
       person.mortality(death);
-      let remainingList = `<h5>Days remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.agesRemaining[0]}</p><p>Venus: ${person.agesRemaining[1]}</p><p>Mars: ${person.agesRemaining[2]}</p><p>Jupiter: ${person.agesRemaining[3]}</p>`;
+      let remainingList = `<h5>Years remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.agesRemaining[0]}</p><p>Venus: ${person.agesRemaining[1]}</p><p>Mars: ${person.agesRemaining[2]}</p><p>Jupiter: ${person.agesRemaining[3]}</p>`;
       $("#remaining-list").html(remainingList);
     } else {
       person.longevity(death);
-      let exceededList = `<h5>Days overdue:</h5><hr><p>Earth: ${person.exceeded}</p><p>Mercury: ${person.agesExceeded[0]}</p><p>Venus: ${person.agesExceeded[1]}</p><p>Mars: ${person.agesExceeded[2]}</p><p>Jupiter: ${person.agesExceeded[3]}</p>`;
+      let exceededList = `<h5>Years overdue:</h5><hr><p>Earth: ${person.exceeded}</p><p>Mercury: ${person.agesExceeded[0]}</p><p>Venus: ${person.agesExceeded[1]}</p><p>Mars: ${person.agesExceeded[2]}</p><p>Jupiter: ${person.agesExceeded[3]}</p>`;
       $("#exceeded-list").html(exceededList);
     }
   });
