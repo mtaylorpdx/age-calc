@@ -12,6 +12,8 @@ export class Person {
       return parseFloat((age / ratio).toFixed(2));
     });
     this.planetAges = planetAges;
+    let ageList = `<p>Earth: ${this.age}</p><p>Mercury: ${this.planetAges[0]}</p><p>Venus: ${this.planetAges[1]}</p><p>Mars: ${this.planetAges[2]}</p><p>Jupiter: ${this.planetAges[3]}</p>`;
+    this.ageList = ageList;
   }
 
   // If life expectancy is greater than current age
