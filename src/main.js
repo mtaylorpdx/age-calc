@@ -20,13 +20,10 @@ $(document).ready(function() {
     // Check age relationship to life expectancy and output results
     if (age < death) {
       person.mortality(death);
-      let balance = `<h5>Years remaining to you:</h5><hr><p>Earth: ${person.remaining}</p><p>Mercury: ${person.agesRemaining[0]}</p><p>Venus: ${person.agesRemaining[1]}</p><p>Mars: ${person.agesRemaining[2]}</p><p>Jupiter: ${person.agesRemaining[3]}</p>`;
-      this.balance = balance;
-      $("#balance").html(this.balance);
+      $("#balance").html(person.balance);
     } else {
       person.longevity(death);
-      let balance = `<h5>Years overdue:</h5><hr><p>Earth: ${person.exceeded}</p><p>Mercury: ${person.agesExceeded[0]}</p><p>Venus: ${person.agesExceeded[1]}</p><p>Mars: ${person.agesExceeded[2]}</p><p>Jupiter: ${person.agesExceeded[3]}</p>`;
-      $("#balance").html(balance);
+      $("#balance").html(person.balance);
     }
   });
 
