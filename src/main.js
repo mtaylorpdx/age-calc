@@ -9,7 +9,6 @@ $(document).ready(function() {
 
   $("#form").submit(function(event) { 
     event.preventDefault();
-
     let age = parseInt($("#ageInput").val());
     let death = parseInt($("#lifetimeInput").val());
 
