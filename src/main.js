@@ -14,8 +14,7 @@ $(document).ready(function() {
 
     // Calculate age in years for other planets and output results
     person.planetAge(age);
-    let ageList = `<p>Earth: ${person.age}</p><p>Mercury: ${person.planetAges[0]}</p><p>Venus: ${person.planetAges[1]}</p><p>Mars: ${person.planetAges[2]}</p><p>Jupiter: ${person.planetAges[3]}</p>`;
-    $("#age-list").html(ageList);
+    $("#age-list").html(person.ageList);
 
     // Check age relationship to life expectancy and output results
     if (age < death) {
